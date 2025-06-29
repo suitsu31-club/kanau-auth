@@ -1,14 +1,18 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+#![deny(clippy::unwrap_used)]
+#![deny(clippy::expect_used)]
+#![deny(clippy::panic)]
+#![warn(missing_docs)]
+#![deny(rustdoc::broken_intra_doc_links)]
+#![doc = include_str!("../README.md")]
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+/// Password hashing and verification
+pub mod password;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+/// Passkey challenge generation and verification
+pub mod passkey;
+
+/// HOTP (HMAC-based One-Time Password) generation and verification
+pub mod hotp;
+
+/// TOTP (Time-based One-Time Password) generation and verification
+pub mod totp;
