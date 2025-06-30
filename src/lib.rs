@@ -19,3 +19,12 @@ pub mod totp;
 
 /// OpenID Connect
 pub mod open_id;
+
+/// OAuth 2.0
+pub mod oauth;
+
+/// Email account verification
+pub mod email_account;
+
+/// JSON Web Tokens
+pub mod jwt;
