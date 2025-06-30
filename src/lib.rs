@@ -16,3 +16,6 @@ pub mod hotp;
 
 /// TOTP (Time-based One-Time Password) generation and verification
 pub mod totp;
+
+/// OpenID Connect
+pub mod open_id;

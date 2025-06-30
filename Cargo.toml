@@ -11,7 +11,8 @@ fast32 = "1.0.3"
 ring = "0.17"
 sha2 = "0.10"
 md5 = "0.8"
-reqwest = { version = "0.12", features = ["json"], optional = true }
+reqwest = { version = "0.12", features = ["json"] }
+compact_str = {version = "0.9", features = ["serde", "rkyv"]}
 tracing = "0.1"
 thiserror = "2.0"
 bcrypt = "0.17.0"
